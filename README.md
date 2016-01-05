@@ -25,7 +25,7 @@ Goals of this POC are
 ## CONFIGURE
 - edit devices.yml to configure the device display (is it a switch with "actions" or only a meter ?, wich icon should we display, etc.)
 
-## TEST
+## DEMO
 - Go to http://localhost:3000/home
 - you can click on the switch devices to switch on/off
 - you can display meters devices 
