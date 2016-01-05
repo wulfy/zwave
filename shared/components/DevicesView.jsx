@@ -30,14 +30,17 @@ export default class DevicesView extends React.Component {
       Liste:
         {
           this.props.deviceslist.map( (data, index) => {
+
+
           var device_config = this.props.config.devices[data.idx];
-          var imgsrc = ''+(device_config[data.Data+'Img'].length > 1)?device_config[data.Data+'Img'] : device_config['defaultimg'];
-          var imgaction= (device_config['action'] == "yes")?this.handleSwitchCommand : null;
+          console.log(device_config)
+          var imgsrc = ''+ (typeof device_config[data.Data+'Img'] === "undefined" ?device_config['defaultimg']:device_config[data.Data+'Img']);
+          var imgaction= (device_config['action'] == "yes")? this.handleSwitchCommand : null;
 
             return (
               <div key={index}>
                 <span>{data.Name}</span>
-                <img src={imgsrc} width='50px' onClick={imgaction} />
+                <img data-id={index} src={imgsrc} height='50px' onClick={imgaction} />
                 - statut : {data.Data}
               </div>
             );
