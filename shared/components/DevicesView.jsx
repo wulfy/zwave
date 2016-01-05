@@ -39,9 +39,6 @@ export default class DevicesView extends React.Component {
                 <span>{data.Name}</span>
                 <img src={imgsrc} width='50px' onClick={imgaction} />
                 - statut : {data.Data}
-                <button data-id={index} onClick={this.handleSwitchCommand}>
-                  {data.Status}
-                </button>
               </div>
             );
           })
