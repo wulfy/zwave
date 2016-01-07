@@ -3,7 +3,7 @@
 A based react isomorphic interface to display zwave devices and send action.
 Use DOMOTICZ API (http://www.domoticz.com/)
 
-(https://cdn2.iconfinder.com/data/icons/freecns-cumulus/32/519791-101_Warning-128.png "warning") This is only a POC.
+!["warning"](https://cdn2.iconfinder.com/data/icons/freecns-cumulus/32/519791-101_Warning-128.png) This is only a POC.
 => For security reason it works only in local network (cause it's not using any API token or other authentification)
 => there are lot s of logs in the console
 
